@@ -6,8 +6,8 @@
 
 <div align="center" style="font-size: 15pt">
 
-<a href='https://arxiv.org/abs/2507.23440'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a>
-<a href='https://aclanthology.org/2025.findings-acl.380/'><img src='https://img.shields.io/badge/Paper-PDF-blue'></a>
+<a href='https://arxiv.org/abs/2507.23440'><img src='https://img.shields.io/badge/Arxiv-PDF-purple'></a>
+<a href='https://aclanthology.org/2025.findings-acl.380/'><img src='https://img.shields.io/badge/ACL-PDF-red'></a>
 
 <h4 align="center">
     <p>
