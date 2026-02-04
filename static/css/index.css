@@ -1,0 +1,166 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.tldr {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container.is-max-wider {
+    max-width: 90%;
+    width: 1400px;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.hypothesis-box {
+  border-left: 4px solid hsl(204, 86%, 53%);
+  background: #f5fbff;
+  padding: 1.2rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.hypothesis-title {
+  font-weight: 700;
+  color: hsl(204, 86%, 53%);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hypothesis-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.tldr-badge {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+
+  background: #f0f4ff;
+  color: #3273dc;
+}
+
+.highlight {
+  color: hsl(204, 86%, 53%);
+  font-weight: 500;
+}
+
+/* Table styles */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.web-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.web-table th,
+.web-table td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.web-table th {
+  background: #f7f9fc;
+  font-weight: 600;
+  color: #333;
+}
+
+.web-table td:first-child,
+.web-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.web-table > thead > tr > th,
+.web-table > tbody > tr > td {
+  text-align: center;
+}
+
+.web-table > thead > tr > th:first-child,
+.web-table > tbody > tr > td:first-child {
+  text-align: left;
+}
+
+/* hover effect */
+.web-table tbody tr:hover {
+  background: #f5faff;
+}
+
+/* group row */
+.group-row td {
+  background: #f0f4f8;
+  font-weight: 600;
+  color: #444;
+  text-align: center !important;
+}
+
+/* highlight */
+.best {
+  color: #3273dc;
+  font-weight: 700;
+}
+
+.second {
+  color: #555;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
