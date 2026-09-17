@@ -1,59 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="description"
         content="Self-Foveate: Enhancing Diversity and Difficulty of Synthesized Instructions from Unsupervised Text via Multi-Level Foveation">
   <meta name="keywords" content="Self-Foveate, Instruction Synthesis, Large Language Models, Multi-Level Foveation, LLM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <title>Self-Foveate: Enhancing Diversity and Difficulty of Synthesized Instructions</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script defer src="./static/js/index.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="page-shell nav-layout">
+    <a class="home-link" href="https://www.mubuky.com/" target="_blank" rel="noopener noreferrer" aria-label="Author homepage">
+      <i class="fas fa-home" aria-hidden="true"></i>
     </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" target="_blank" href="https://www.mubuky.com/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+    <div class="nav-menu" id="nav-menu">
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#citation">Citation</a>
+      <div class="research-dropdown" id="research-navigation">
+        <button class="research-toggle" id="research-toggle" type="button" aria-expanded="false" aria-controls="research-menu">
+          More Research <span class="dropdown-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="research-menu" id="research-menu">
+          <a href="https://tongjingqi.github.io/AI-Can-Learn-Scientific-Taste/" target="_blank" rel="noopener noreferrer">AI Can Learn Scientific Taste</a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Self-Foveate: Enhancing Diversity and Difficulty of Synthesized Instructions from Unsupervised Text via Multi-Level Foveation</h1>
-
-          <div class="is-size-5 publication-authors">
+<!-- Publication metadata: edit this block when reusing the template. -->
+<header class="publication-header">
+  <div class="page-shell">
+    <h1 class="publication-title"><span class="publication-name">Self-Foveate:</span> <span class="publication-subtitle">Enhancing Diversity and Difficulty of Synthesized Instructions from Unsupervised Text via Multi-Level Foveation</span></h1>
+    <div class="publication-authors">
             <span class="author-block">
               <a href="https://www.mubuky.com/">Mingzhe Li</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -63,266 +58,227 @@
             </span>
           </div>
 
-          <div class="is-size-6 publication-authors">
+          <div class="publication-affiliations">
             <span class="author-block"><sup>1</sup>Harbin Institute of Technology</span>
           </div>
-          <div class="is-size-6 publication-authors">
+          <div class="publication-notes">
             <span class="author-block"><sup>#</sup>Corresponding Author</span>
           </div>
+    <div class="publication-links" aria-label="Paper resources">
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
+
               <span class="link-block">
-                <a target="_blank" href="https://arxiv.org/pdf/2507.23440"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2507.23440"
+                   class="button is-rounded resource-link">
+                  <span class="icon" aria-hidden="true">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
 
-              <!-- arXiv Link. -->
+
               <span class="link-block">
-                <a target="_blank" href="https://arxiv.org/abs/2507.23440"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2507.23440"
+                   class="button is-rounded resource-link">
+                  <span class="icon" aria-hidden="true">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
 
-              <!-- Code Link. -->
+
               <span class="link-block">
-                <a target="_blank" href="https://github.com/Mubuky/Self-Foveate"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mubuky/Self-Foveate"
+                  class="button is-rounded resource-link">
+                  <span class="icon" aria-hidden="true">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
               </span>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
+  </div>
+</header>
+
+<section class="tldr-section" aria-labelledby="tldr-label">
+  <div class="page-shell reading-shell">
+    <span class="tldr-badge" id="tldr-label">TL;DR</span>
+    <p class="tldr-copy">
+      An LLM-driven <strong class="highlight">Multi-Level Foveation</strong> method<br>
+      for synthesizing high-quality instruction data from unsupervised text<br>
+      with enhanced <strong class="highlight">diversity</strong> and <strong class="highlight">difficulty</strong>.
+    </p>
   </div>
 </section>
 
-<section class="section" style="padding-top: 0rem">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-
-        <span class="tldr-badge">TL;DR</span>
-
-        <div class="content has-text-justified">
-          <p style="font-size: 1.25rem; text-align: center; margin-top: 0.8rem;">
-            An LLM-driven <span style="color: hsl(204, 86%, 53%); font-weight: bolder;">Multi-Level Foveation</span> method
-            <br/>
-            for synthesizing high-quality instruction data from unsupervised text
-            <br/>
-            with enhanced <span style="color: hsl(204, 86%, 53%); font-weight: bolder;">diversity</span> and <span style="color: hsl(204, 86%, 53%); font-weight: bolder;">difficulty</span>.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top: 0rem">
-  <div class="container is-max-wider">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
+<main id="main-content">
+  <section class="paper-section abstract-section" id="abstract" aria-labelledby="abstract-title">
+    <div class="page-shell reading-shell">
+      <h2 class="section-heading" id="abstract-title">Abstract</h2>
+      <div class="content abstract-copy">
+        <p>
             Synthesizing high-quality instruction data from unsupervised text is a promising paradigm for training large language models (LLMs), yet automated methods for this task still exhibit significant limitations in the diversity and difficulty of synthesized instructions. To address these challenges, we propose <b>Self-Foveate</b>, an LLM-driven method for instruction synthesis. Inspired by hierarchical human visual perception, Self-Foveate introduces a "Micro-Scatter-Macro" multi-level foveation methodology that guides the extraction of textual information at three complementary granularities, from fine-grained details through cross-region connections to holistic patterns, thereby enhancing both the diversity and difficulty of synthesized instructions. Furthermore, a re-synthesis module is incorporated to improve the fidelity of instructions to source text and their overall quality. Comprehensive experiments across multiple unsupervised corpora and diverse model architectures demonstrate that Self-Foveate consistently outperforms existing methods. We publicly release our code at <a href="https://github.com/Mubuky/Self-Foveate">https://github.com/Mubuky/Self-Foveate</a>.
           </p>
-        </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container is-max-wider">
-
-    <div class="columns">
-
-      <!-- Left text (40%) -->
-      <div class="column is-5">
-        <h2 class="title is-3">
-          Multi-Level Foveation Methodology
-        </h2>
-
-        <div class="content">
-          <p>
-            Inspired by hierarchical human visual perception, Self-Foveate introduces a "Micro-Scatter-Macro" methodology that extracts textual information at three complementary granularities:
-          </p>
-          <ul>
-            <li style="margin-top: 1rem;">
-              <span style="color: hsl(204, 86%, 53%); font-weight: bolder;">Micro Level (Word)</span>:
-              Fine-grained entity/attribute extraction focusing on individual words for detailed features.
-            </li>
-
-            <li style="margin-top: 1rem;">
-              <span style="color: hsl(204, 86%, 53%); font-weight: bolder;">Scatter Level (Multi-keyword)</span>:
-              Cross-entity relationship grouping that combines 1-3 keywords into diverse feature groups.
-            </li>
-
-            <li style="margin-top: 1rem;">
-              <span style="color: hsl(204, 86%, 53%); font-weight: bolder;">Macro Level (Sentence)</span>:
-              Rhetorical/figurative device extraction capturing complete sentences as contextual features.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Right image (60%) -->
-      <div class="column is-7 has-text-centered">
-        <img
-          src="static/images/comparison.png"
-          class="interpolation-image"
-          width="100%"
-        />
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-wider">
-
-    <div class="columns">
-
-      <!-- Left text (40%) -->
-      <div class="column is-5">
-        <h2 class="title is-3">
-          Framework Overview
-        </h2>
-
-        <div class="content">
-          <p>
-            Compared to baseline methods like Self-QA that employ single-step generation producing simple and monotonous instruction candidates, <b>Self-Foveate</b> leverages multi-level foveation to:
-          </p>
-          <ul>
-            <li style="margin-top: 1rem;">
-              <span style="font-weight: bolder;">Extract diverse details</span>:
+  <!-- Overview first, then the detailed example. Feature lists are reusable groups. -->
+  <section class="paper-section" id="method" aria-labelledby="method-title">
+    <div class="page-shell">
+      <h2 class="section-heading" id="method-title">Framework Overview</h2>
+      <p class="section-intro">Compared to baseline methods like Self-QA that employ single-step generation producing simple and monotonous instruction candidates, <b>Self-Foveate</b> leverages multi-level foveation to:</p>
+      <ul class="feature-list" role="list">
+        <li>
+              <strong>Extract diverse details:</strong>
               Multi-level foveation enables the LLM to extract details (highlighted in distinct colors) of the text.
             </li>
 
-            <li style="margin-top: 1rem;">
-              <span style="font-weight: bolder;">Synthesize with diversity</span>:
+            <li>
+              <strong>Synthesize with diversity:</strong>
               Different synthesis paradigms generate instructions with enhanced diversity and difficulty.
             </li>
 
-            <li style="margin-top: 1rem;">
-              <span style="font-weight: bolder;">Ensure quality through re-synthesis</span>:
+            <li>
+              <strong>Ensure quality through re-synthesis:</strong>
               A re-synthesis module improves the fidelity of instructions to source text.
             </li>
-          </ul>
-        </div>
-      </div>
+      </ul>
+      <figure class="paper-figure">
+        <a class="figure-link" href="static/images/framework.png" target="_blank" rel="noopener noreferrer" aria-label="View the Self-Foveate framework at full size">
+          <picture>
+          <source type="image/webp"
+                  srcset="static/images/responsive/framework-640.webp 640w, static/images/responsive/framework-1280.webp 1280w, static/images/responsive/framework-2400.webp 2400w"
+                  sizes="(max-width: 768px) calc(100vw - 40px), (max-width: 1184px) calc(100vw - 64px), 1120px">
+          <img src="static/images/framework.png" width="7500" height="4101"
+               alt="Self-Foveate framework: multi-level foveation, instruction synthesis, response synthesis, and re-synthesis." loading="lazy" decoding="async">
+        </picture>
+        </a>
+        <figcaption class="figure-caption figure-caption--link-only">
 
-      <!-- Right image (60%) -->
-      <div class="column is-7 has-text-centered">
-        <img
-          src="static/images/framework.png"
-          class="interpolation-image"
-          width="100%"
-        />
-      </div>
-
+          <a href="static/images/framework.png" target="_blank" rel="noopener noreferrer" aria-label="View the Self-Foveate framework at full size">View full size ↗</a>
+        </figcaption>
+      </figure>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section class="paper-section" id="foveation" aria-labelledby="foveation-title">
+    <div class="page-shell">
+      <h2 class="section-heading" id="foveation-title">Multi-Level Foveation Methodology</h2>
+      <p class="section-intro">Inspired by hierarchical human visual perception, Self-Foveate introduces a "Micro-Scatter-Macro" methodology that extracts textual information at three complementary granularities:</p>
+      <ul class="feature-list feature-list--numbered" role="list">
+        <li>
+              <strong class="highlight">Micro Level (Word):</strong>
+              Fine-grained entity/attribute extraction focusing on individual words for detailed features.
+            </li>
 
-<section class="section">
-  <div class="container is-max-wider">
+            <li>
+              <strong class="highlight">Scatter Level (Multi-keyword):</strong>
+              Cross-entity relationship grouping that combines 1-3 keywords into diverse feature groups.
+            </li>
 
-    <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+            <li>
+              <strong class="highlight">Macro Level (Sentence):</strong>
+              Rhetorical/figurative device extraction capturing complete sentences as contextual features.
+            </li>
+      </ul>
+      <figure class="paper-figure">
+        <a class="figure-link" href="static/images/comparison.png" target="_blank" rel="noopener noreferrer" aria-label="View the multi-level foveation example at full size">
+          <picture>
+          <source type="image/webp"
+                  srcset="static/images/responsive/comparison-640.webp 640w, static/images/responsive/comparison-1280.webp 1280w, static/images/responsive/comparison-2400.webp 2400w"
+                  sizes="(max-width: 768px) calc(100vw - 40px), (max-width: 1184px) calc(100vw - 64px), 1120px">
+          <img src="static/images/comparison.png" width="7784" height="3280"
+               alt="Worked example of extracting words, keyword groups, and sentences, then synthesizing instructions and tasks." loading="lazy" decoding="async">
+        </picture>
+        </a>
+        <figcaption class="figure-caption figure-caption--link-only">
 
-    <p class="content has-text-centered" style="margin-bottom: 2rem;">
-      Comprehensive experiments demonstrate that Self-Foveate consistently outperforms existing methods across multiple unsupervised corpora and diverse model architectures.
-    </p>
+          <a href="static/images/comparison.png" target="_blank" rel="noopener noreferrer" aria-label="View the multi-level foveation example at full size">View full size ↗</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <div class="columns is-centered">
-      <div class="column is-5 has-text-centered">
-        <img
-          src="static/images/trend_accuracy.png"
-          class="interpolation-image"
-          width="100%"
-        />
-        <p class="content has-text-centered" style="margin-top: 1rem;">
-          <i>Accuracy trend across different settings</i>
-        </p>
-      </div>
-
-      <div class="column is-5 has-text-centered">
-        <img
-          src="static/images/trend_recall.png"
-          class="interpolation-image"
-          width="100%"
-        />
-        <p class="content has-text-centered" style="margin-top: 1rem;">
-          <i>Recall trend across different settings</i>
-        </p>
+  <section class="paper-section" id="results" aria-labelledby="results-title">
+    <div class="page-shell">
+      <h2 class="section-heading" id="results-title">Experimental Results</h2>
+      <p class="section-intro">Comprehensive experiments demonstrate that Self-Foveate consistently outperforms existing methods across multiple unsupervised corpora and diverse model architectures.</p>
+      <div class="figure-grid">
+        <figure class="paper-figure">
+        <a class="figure-link" href="static/images/trend_accuracy.png" target="_blank" rel="noopener noreferrer" aria-label="View the accuracy trend chart at full size">
+          <picture>
+          <source type="image/webp"
+                  srcset="static/images/responsive/trend_accuracy-640.webp 640w, static/images/responsive/trend_accuracy-1280.webp 1280w, static/images/responsive/trend_accuracy-2400.webp 2400w"
+                  sizes="(max-width: 768px) calc(100vw - 40px), (max-width: 1184px) calc((100vw - 96px) / 2), 544px">
+          <img src="static/images/trend_accuracy.png" width="3125" height="2188"
+               alt="Accuracy of Self-Foveate, Self-QA, Bonito, and Wiki2023 as the number of instructions per source text increases from 6 to 24." loading="lazy" decoding="async">
+        </picture>
+        </a>
+        <figcaption class="figure-caption">
+          <span>Accuracy vs. instructions synthesized per source text.</span>
+          <a href="static/images/trend_accuracy.png" target="_blank" rel="noopener noreferrer" aria-label="View the accuracy trend chart at full size">View full size ↗</a>
+        </figcaption>
+      </figure>
+        <figure class="paper-figure">
+        <a class="figure-link" href="static/images/trend_recall.png" target="_blank" rel="noopener noreferrer" aria-label="View the recall trend chart at full size">
+          <picture>
+          <source type="image/webp"
+                  srcset="static/images/responsive/trend_recall-640.webp 640w, static/images/responsive/trend_recall-1280.webp 1280w, static/images/responsive/trend_recall-2400.webp 2400w"
+                  sizes="(max-width: 768px) calc(100vw - 40px), (max-width: 1184px) calc((100vw - 96px) / 2), 544px">
+          <img src="static/images/trend_recall.png" width="3125" height="2188"
+               alt="Recall of Self-Foveate, Self-QA, Bonito, and Wiki2023 as the number of instructions per source text increases from 6 to 24." loading="lazy" decoding="async">
+        </picture>
+        </a>
+        <figcaption class="figure-caption">
+          <span>Recall vs. instructions synthesized per source text.</span>
+          <a href="static/images/trend_recall.png" target="_blank" rel="noopener noreferrer" aria-label="View the recall trend chart at full size">View full size ↗</a>
+        </figcaption>
+      </figure>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-wider">
-
-    <h2 class="title is-3 has-text-centered">Downstream Task Performance</h2>
-
-    <p class="content has-text-centered" style="margin-bottom: 1rem;">
-      <i>Recall (Rec.) and LLM Accuracy (Acc.) on downstream tasks: Self-Foveate vs. baselines.</i>
-    </p>
-
-    <div class="table-wrapper">
-    <table class="web-table">
+  <section class="paper-section paper-section--subtle" id="performance" aria-labelledby="performance-title">
+    <div class="page-shell">
+      <h2 class="section-heading" id="performance-title">Downstream Task Performance</h2>
+      <p class="section-intro table-intro">Recall (Rec.) and LLM Accuracy (Acc.) on downstream tasks: Self-Foveate vs. baselines.</p>
+      <p class="table-scroll-hint" id="performance-hint">Scroll horizontally to compare all results. The Settings column stays visible. →</p>
+      <div class="table-shell" data-scroll-table>
+        <div class="table-wrapper" tabindex="0" role="region" aria-labelledby="performance-title" aria-describedby="performance-hint">
+    <table class="data-table">
       <thead>
         <tr>
-          <th rowspan="3"><b>Settings</b></th>
-          <th colspan="6"><b>GPT-4o mini</b></th>
-          <th colspan="6"><b>DeepSeek-V3</b></th>
+          <th rowspan="3" scope="col" class="sticky-column"><b>Settings</b></th>
+          <th colspan="6" scope="colgroup" class="column-group"><span class="column-group-label"><b>GPT-4o mini</b></span></th>
+          <th colspan="6" scope="colgroup" class="column-group"><span class="column-group-label"><b>DeepSeek-V3</b></span></th>
         </tr>
         <tr>
-          <th colspan="2"><b>SQuAD</b></th>
-          <th colspan="2"><b>HotpotQA</b></th>
-          <th colspan="2"><b>FilmWiki</b></th>
-          <th colspan="2"><b>SQuAD</b></th>
-          <th colspan="2"><b>HotpotQA</b></th>
-          <th colspan="2"><b>FilmWiki</b></th>
+          <th colspan="2" scope="colgroup"><b>SQuAD</b></th>
+          <th colspan="2" scope="colgroup"><b>HotpotQA</b></th>
+          <th colspan="2" scope="colgroup"><b>FilmWiki</b></th>
+          <th colspan="2" scope="colgroup"><b>SQuAD</b></th>
+          <th colspan="2" scope="colgroup"><b>HotpotQA</b></th>
+          <th colspan="2" scope="colgroup"><b>FilmWiki</b></th>
         </tr>
         <tr>
-          <th><b>Rec.</b></th><th><b>Acc.</b></th>
-          <th><b>Rec.</b></th><th><b>Acc.</b></th>
-          <th><b>Rec.</b></th><th><b>Acc.</b></th>
-          <th><b>Rec.</b></th><th><b>Acc.</b></th>
-          <th><b>Rec.</b></th><th><b>Acc.</b></th>
-          <th><b>Rec.</b></th><th><b>Acc.</b></th>
+          <th scope="col"><b>Rec.</b></th><th scope="col"><b>Acc.</b></th>
+          <th scope="col"><b>Rec.</b></th><th scope="col"><b>Acc.</b></th>
+          <th scope="col"><b>Rec.</b></th><th scope="col"><b>Acc.</b></th>
+          <th scope="col"><b>Rec.</b></th><th scope="col"><b>Acc.</b></th>
+          <th scope="col"><b>Rec.</b></th><th scope="col"><b>Acc.</b></th>
+          <th scope="col"><b>Rec.</b></th><th scope="col"><b>Acc.</b></th>
         </tr>
       </thead>
       <tbody>
         <tr class="group-row">
-          <td colspan="13">Llama-3.1-8B</td>
+          <th colspan="13" scope="rowgroup"><span class="group-label">Llama-3.1-8B</span></th>
         </tr>
         <tr>
-          <td>None*</td>
+          <th scope="row" class="sticky-column">None*</th>
           <td>0.309</td><td>0.202</td>
           <td>0.244</td><td>0.160</td>
           <td>0.212</td><td>0.082</td>
@@ -331,7 +287,7 @@
           <td>0.212</td><td>0.082</td>
         </tr>
         <tr>
-          <td>Self-QA</td>
+          <th scope="row" class="sticky-column">Self-QA</th>
           <td>0.367</td><td>0.384</td>
           <td>0.372</td><td>0.358</td>
           <td>0.328</td><td>0.201</td>
@@ -340,7 +296,7 @@
           <td>0.370</td><td>0.239</td>
         </tr>
         <tr>
-          <td>Wiki2023</td>
+          <th scope="row" class="sticky-column">Wiki2023</th>
           <td>0.327</td><td>0.361</td>
           <td>0.338</td><td>0.322</td>
           <td>0.333</td><td>0.235</td>
@@ -349,7 +305,7 @@
           <td>0.349</td><td>0.244</td>
         </tr>
         <tr>
-          <td>Bonito*</td>
+          <th scope="row" class="sticky-column">Bonito*</th>
           <td>0.386</td><td>0.405</td>
           <td>0.360</td><td>0.372</td>
           <td>0.219</td><td>0.153</td>
@@ -358,7 +314,7 @@
           <td>0.219</td><td>0.153</td>
         </tr>
         <tr>
-          <td><b>Self-Foveate</b></td>
+          <th scope="row" class="sticky-column"><b>Self-Foveate</b></th>
           <td class="best">0.484</td><td class="best">0.490</td>
           <td class="best">0.507</td><td class="best">0.486</td>
           <td class="best">0.512</td><td class="best">0.367</td>
@@ -367,11 +323,13 @@
           <td class="best">0.548</td><td class="best">0.397</td>
         </tr>
 
+        </tbody>
+      <tbody>
         <tr class="group-row">
-          <td colspan="13">Qwen2.5-7B</td>
+          <th colspan="13" scope="rowgroup"><span class="group-label">Qwen2.5-7B</span></th>
         </tr>
         <tr>
-          <td>None*</td>
+          <th scope="row" class="sticky-column">None*</th>
           <td>0.251</td><td>0.300</td>
           <td>0.266</td><td>0.234</td>
           <td>0.139</td><td>0.032</td>
@@ -380,7 +338,7 @@
           <td>0.139</td><td>0.032</td>
         </tr>
         <tr>
-          <td>Self-QA</td>
+          <th scope="row" class="sticky-column">Self-QA</th>
           <td>0.249</td><td>0.232</td>
           <td>0.276</td><td>0.246</td>
           <td>0.206</td><td>0.082</td>
@@ -389,7 +347,7 @@
           <td>0.111</td><td>0.056</td>
         </tr>
         <tr>
-          <td>Wiki2023</td>
+          <th scope="row" class="sticky-column">Wiki2023</th>
           <td>0.215</td><td>0.221</td>
           <td>0.135</td><td>0.112</td>
           <td>0.192</td><td>0.093</td>
@@ -398,7 +356,7 @@
           <td>0.202</td><td>0.136</td>
         </tr>
         <tr>
-          <td>Bonito*</td>
+          <th scope="row" class="sticky-column">Bonito*</th>
           <td>0.143</td><td>0.109</td>
           <td>0.212</td><td>0.199</td>
           <td>0.168</td><td>0.098</td>
@@ -407,7 +365,7 @@
           <td>0.168</td><td>0.098</td>
         </tr>
         <tr>
-          <td><b>Self-Foveate</b></td>
+          <th scope="row" class="sticky-column"><b>Self-Foveate</b></th>
           <td class="best">0.408</td><td class="best">0.414</td>
           <td class="best">0.372</td><td class="best">0.329</td>
           <td class="best">0.283</td><td class="best">0.140</td>
@@ -416,11 +374,13 @@
           <td class="best">0.261</td><td class="best">0.140</td>
         </tr>
 
+        </tbody>
+      <tbody>
         <tr class="group-row">
-          <td colspan="13">Gemma-2-9B</td>
+          <th colspan="13" scope="rowgroup"><span class="group-label">Gemma-2-9B</span></th>
         </tr>
         <tr>
-          <td>None*</td>
+          <th scope="row" class="sticky-column">None*</th>
           <td>0.224</td><td>0.121</td>
           <td>0.175</td><td>0.078</td>
           <td>0.211</td><td>0.099</td>
@@ -429,7 +389,7 @@
           <td>0.221</td><td>0.099</td>
         </tr>
         <tr>
-          <td>Self-QA</td>
+          <th scope="row" class="sticky-column">Self-QA</th>
           <td>0.383</td><td>0.409</td>
           <td>0.408</td><td>0.389</td>
           <td>0.429</td><td>0.315</td>
@@ -438,7 +398,7 @@
           <td>0.509</td><td>0.386</td>
         </tr>
         <tr>
-          <td>Wiki2023</td>
+          <th scope="row" class="sticky-column">Wiki2023</th>
           <td>0.336</td><td>0.378</td>
           <td>0.361</td><td>0.352</td>
           <td>0.478</td><td>0.384</td>
@@ -447,7 +407,7 @@
           <td>0.494</td><td>0.401</td>
         </tr>
         <tr>
-          <td>Bonito*</td>
+          <th scope="row" class="sticky-column">Bonito*</th>
           <td>0.411</td><td>0.457</td>
           <td>0.366</td><td>0.373</td>
           <td>0.255</td><td>0.196</td>
@@ -456,7 +416,7 @@
           <td>0.255</td><td>0.196</td>
         </tr>
         <tr>
-          <td><b>Self-Foveate</b></td>
+          <th scope="row" class="sticky-column"><b>Self-Foveate</b></th>
           <td class="best">0.507</td><td class="best">0.525</td>
           <td class="best">0.537</td><td class="best">0.520</td>
           <td class="best">0.672</td><td class="best">0.528</td>
@@ -466,51 +426,34 @@
         </tr>
       </tbody>
     </table>
+        </div>
+      </div>
+      <p class="table-footnote">* Indicates that the base model was not fine-tuned using instructions synthesized by GPT-4o mini or DeepSeek-V3.</p>
     </div>
+  </section>
 
-    <p class="content has-text-centered" style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-      * Indicates that the base model was not fine-tuned using instructions synthesized by GPT-4o mini or DeepSeek-V3.
-    </p>
-
-  </div>
-</section>
-
-<section class="section" id="citation">
-  <div class="container is-max-desktop content">
-    <h2 class="title is-3 has-text-centered">Citation</h2>
-    <pre><code>@inproceedings{li2025self,
+  <section class="paper-section citation-section" id="citation" aria-labelledby="citation-title">
+    <div class="page-shell reading-shell">
+      <h2 class="section-heading" id="citation-title">Citation</h2>
+      <pre class="citation-block" tabindex="0" aria-label="BibTeX citation"><code>@inproceedings{li2025self,
   title={Self-Foveate: Enhancing Diversity and Difficulty of Synthesized Instructions from Unsupervised Text via Multi-Level Foveation},
   author={Li, Mingzhe and Lu, Xin and Zhao, Yanyan},
   booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
   pages={7274--7289},
   year={2025}
 }</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link" href="https://arxiv.org/pdf/2507.23440" target="_blank">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/Mubuky/Self-Foveate" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            Website template borrowed from <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
-        </div>
-      </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="page-shell">
+    <div class="footer-links">
+      <a href="https://arxiv.org/pdf/2507.23440" target="_blank" rel="noopener noreferrer" aria-label="Paper PDF"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+      <a href="https://github.com/Mubuky/Self-Foveate" target="_blank" rel="noopener noreferrer" aria-label="Code repository"><i class="fab fa-github" aria-hidden="true"></i></a>
     </div>
+    <p>Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.</p>
   </div>
 </footer>
-
 </body>
 </html>
